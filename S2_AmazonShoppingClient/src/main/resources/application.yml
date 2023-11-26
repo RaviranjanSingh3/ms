@@ -1,0 +1,15 @@
+server:
+  port: 7071
+  #it says this is not client .this is server..
+
+spring:
+  application:
+    name: Amazon-shopping
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
